@@ -3,7 +3,7 @@
 The first clone detection tool in Solana smart contracts, leveraging program representation at different granularities. This tool is designed to utilize both semantic and structural attributes, effectively representing reachable paths derived from attributed control flow graphs. 
 
 ## Framework of SolaSim
-## ![image](https://github.com/CheWang09/SolanaClone/blob/main/Framework.png)
+## ![image](https://github.com/Academic23/SolaSim_CloneDetection/blob/main/framework.png)
 
 This project is a prototype implementation of SolaSim, an unsupervised approach to measure Solana smart contract similarity. If you find the tool useful in your work, please cite our paper:
 "SolaSim: Clone Detection for Solana Smart Contracts via Program Representation"
