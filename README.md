@@ -24,20 +24,22 @@ The dependency packages are listed below:
 We established the ground truth through random sampling of pairs of smart contracts and instruction-level functions from the entire dataset. The dataset was labeled according to the following criteria:
 
 #### For function-level assessment:
-Rule 1 for Type 1 clones: If the function codes are strictly identical, they were categorized as true (Type 1 clones); otherwise, they were labeled as false.
+Rule 1 for Type 1 clones: If the function codes pairs are strictly identical, they were categorized as true (Type 1 clones); otherwise, they were labeled as false.
 
-Rule 2 for Type 2 clones: If the function codes are strictly identical except for variable names, they were categorized as true (Type 2 clones); otherwise, they were labeled as false.
+Rule 2 for Type 2 clones: If the function codes pairs are strictly identical except for variable names, they were categorized as true (Type 2 clones); otherwise, they were labeled as false.
 
 Rule 3 for Type 3 clones:
-a) Whether the two function codes implement the same functionality, such as "deposit" and "withdraw."
-b) Whether the two function codes merely reorder logic sequences without altering the logical structure.
-c) Whether the two function codes introduce additional code statements that do not affect the implementation of other code.
-d) Whether the two function codes delete code statements that do not affect the implementation of other code.
+a) Whether the two function codes pairs implement the same functionality, such as "deposit" and "withdraw."
+b) Whether the two function codes pairs merely reorder logic sequences without altering the logical structure.
+c) Whether the two function codes pairs introduce additional code statements that do not affect the implementation of other code.
+d) Whether the two function codes pairs delete code statements that do not affect the implementation of other code.
 
-We initially assessed whether these two functions had the same functionality. Subsequently, we examined whether there were differences in code fragment implementations. If the function code pairs met our criteria, they were labeled as true (Type 3 clones); otherwise, they were labeled as false. We provided an example of Type 3 code clones in Figure 6 of the paper.
+If the function codes pairs fulfill above sub-rules of Type-3 clones, then they were labeled as true; otherwise, they were labled as false. In addition, we provided an example of Type 3 code clones in Figure 6 of the paper.
 
 #### For smart contract-level assessment:
 We initially analyzed the business purpose of pairs of smart contracts. If two smart contracts served different business purposes, they were directly labeled as false (not related). Otherwise, we scrutinized the functions within each smart contract. We allowed for some differences in functions between pairs of smart contracts, as long as approximately 70% of the functions were similar. The criteria for assessing function pairs remained consistent with the aforementioned rules. Therefore, if the above requirements were met, we labeled the pair of smart contracts as true (related); otherwise, they were considered unrelated.
+
+#### Cohen's Kappa coefficient to demonstrate ground truth.
 
 
 ### open dataset
