@@ -43,7 +43,7 @@ We initially analyzed the business purpose of pairs of smart contracts. If two s
 
 
 ### open dataset
-Since the size of the dataset (more than 50 GB) exceeds the limit of GitHub. Thus we only upload the project name that we crawled from GitHub, and uploaded the cfg dot file zip to Google driver for downloaded. The link is https://drive.google.com/file/d/1HQdByXsx0tbdeGYQ6prJa_RtQFWHawYD/view?usp=drive_link
+Since the size of the dataset (more than 50 GB) exceeds the limit of GitHub. Thus we only upload the project name that we crawled from GitHub, and uploaded the cfg dot file zip and ground truth test dataset to Google driver for downloaded. The link is https://drive.google.com/file/d/1HQdByXsx0tbdeGYQ6prJa_RtQFWHawYD/view?usp=drive_link
 In the following, we will store our raw data set on the Cloud for future research.
 
 ## How to compile smart contract and visualize cfg dot:
