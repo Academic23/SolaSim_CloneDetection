@@ -43,8 +43,10 @@ We initially analyzed the business purpose of pairs of smart contracts. If two s
 
 
 ### open dataset
-Since the size of the dataset (more than 50 GB) exceeds the limit of GitHub. Thus we only upload the project name that we crawled from GitHub, and uploaded the cfg dot file zip and ground truth test dataset to Google driver for downloaded. The link is https://drive.google.com/file/d/1HQdByXsx0tbdeGYQ6prJa_RtQFWHawYD/view?usp=drive_link
-In the following, we will store our raw data set on the Cloud for future research.
+Since the size of the dataset (more than 50 GB) exceeds the limit of GitHub. Thus we only upload the project name that we crawled from GitHub, and uploaded the cfg dot file zip and ground truth test dataset to Google driver for downloaded. 
+The link of cfg.dot files: https://drive.google.com/file/d/1HQdByXsx0tbdeGYQ6prJa_RtQFWHawYD/view?usp=drive_link
+The link of test dataset:  https://drive.google.com/file/d/12drDJz-MIQG6PxEuVd1LwMKYAWR_RcUb/view?usp=drive_link
+In the following, we will upload our raw data set to Cloud for future researches.
 
 ## How to compile smart contract and visualize cfg dot:
   1. cargo rustc -- --emit mir -Z dump-mir=F -Z dump-mir-dataflow -Z unpretty=mir-cfg -o mir.dot
