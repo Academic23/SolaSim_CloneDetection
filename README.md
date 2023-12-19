@@ -39,13 +39,13 @@ If the function codes pairs fulfill above sub-rules of Type-3 clones, then they 
 #### For smart contract-level assessment:
 We initially analyzed the business purpose of pairs of smart contracts. If two smart contracts served different business purposes, they were directly labeled as false (not related). Otherwise, we scrutinized the functions within each smart contract. We allowed for some differences in functions between pairs of smart contracts, as long as approximately 70% of the functions were similar. The criteria for assessing function pairs remained consistent with the aforementioned rules. Therefore, if the above requirements were met, we labeled the pair of smart contracts as true (related); otherwise, they were considered unrelated.
 
-#### Cohen's Kappa coefficient to demonstrate ground truth.
-
-
 ### open dataset
-Since the size of the dataset (more than 50 GB) exceeds the limit of GitHub. Thus we only upload the project name that we crawled from GitHub, and uploaded the cfg dot file zip and ground truth test dataset to Google driver for downloaded. <br>
-The link of cfg.dot files: https://drive.google.com/file/d/1HQdByXsx0tbdeGYQ6prJa_RtQFWHawYD/view?usp=drive_link <br>
-The link of test dataset:  https://drive.google.com/file/d/12drDJz-MIQG6PxEuVd1LwMKYAWR_RcUb/view?usp=drive_link <br>
+Since the size of the dataset (more than 50 GB) exceeds the limit of GitHub. Thus we only upload the project name that we crawled from GitHub, and uploaded the cfg dot file zip and ground truth test dataset to Google driver for downloaded.
+
+https://drive.google.com/file/d/1HQdByXsx0tbdeGYQ6prJa_RtQFWHawYD/view?usp=drive_link
+
+https://drive.google.com/file/d/12drDJz-MIQG6PxEuVd1LwMKYAWR_RcUb/view?usp=drive_link
+
 In the following, we will upload our raw data set to Cloud for future researches.
 
 ## How to compile smart contract and visualize cfg dot:
